@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surakshaa - Car auction</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header class="container mt-4 mb-4">
+        <header>
+            <nav class="nav nav-pills nav-justified">
+                <a class="nav-item nav-link active" href="#">Current Bid</a>
+                <a class="nav-item nav-link" href="carslist.html">Cars List</a>
+                <a class="nav-item nav-link" href="uploads.html">Upload Files</a>
+              </nav>
+        </header>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <div class="main-info-box">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="container border1">
+                                <div class="row ml-3 mt-4">
+                                    <div class="col-3">
+                                        <h5 class="mt-3">Car Number</h5>
+                                        <h6 id="cur_car_number">abc</h6>
+                                    </div>
+                                    <div class="offset-2 col">
+                                        <h5 class="mt-3">Bid Price</h5>
+                                        <h6 id="cur_car_price">abc</h6>
+                                    </div>
+                                </div>
+                                <div class="row ml-3 mt-3">
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="mb-2">Increase Bid:</h5>
+                                                <button class="btn btn-success">+1K</button>
+                                                <button class="btn ml-5 btn-success">+2K</button>
+                                                <button class="btn ml-5 btn-success">+3K</button>
+                                                <button class="btn ml-5 btn-success">+5K</button>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-12">
+                                                <h5 class="mb-2">Decrease Bid:</h5>
+                                                <button class="btn btn-danger">- 1K</button>
+                                                <button class="btn ml-5 btn-danger">- 2K</button>
+                                                <button class="btn ml-5 btn-danger">- 3K</button>
+                                                <button class="btn ml-5 btn-danger">- 5K</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <input type="text" name="update_bid" id="update_bid" class="price_input form-control" placeholder="+">
+                                        <input type="text" name="update_bid" id="update_bid" class="price_input form-control" placeholder="-">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row ml-3 mt-3">
+                                    <div class="col-8">
+                                        <button class="btn btn-danger soldBtn">Sold</button>
+                                        <button class="btn ml-5 btn-success obBtn">Open Bid</button>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row ml-3 mt-3">
+                                    <div class="col-12">
+                                        <button class="btn btn-danger prevBtn d-inline-block">Previous Car</button>
+                                    
+                                        <input type="text" name="jump_to_car" id="jump_to_car" class="jump_to form-control d-inline-block" placeholder="Jump to">
+                                    
+                                        <button class="btn btn-success nextBtn">Next Car</button>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-------------------------->
+            <div class="col-6">
+                <div class="container">
+                    <div class="row mb-3">
+                        <div class="col-4 col-md-2 text-center">
+                            <h1 id="car_id" class="number_font pt-2">101</h1>
+                        </div>
+                        <div class="col-4 col-md-3 offset-md-1 text-center">
+                            <h3 id="car_name" class="text_font pt-2">Wagon R VXI</h3>
+                        </div>
+                        <div class="col-4 col-md-3 text-center">
+                            <h3 id="car_color" class="text_font pt-2">Silver</h3>
+                        </div>
+                        <div class="col-4 col-md-3 text-center">
+                            <h3 id="car_number" class="number_font pt-2">KA51AB1234</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <img src="img/104.jpeg" class="img-thumbnail float-left" alt="...">
+                    </div>
+                    <div class="col-6">
+                        <div class="row ml-3 mb-4 mt-4">
+                            <div class="col-md-5 border1">
+                                <h6 class="mt-3">Date of Registration</h6>
+                                <h2 id="dor" class="number_font">abc</h2>
+                            </div>
+                            <div class="col-md-5 border1 offset-1">
+                                <h6 class="mt-3">Insurance</h6>
+                                <h2 id="insurance" class="text_font">abc</h2>
+                            </div>
+                        </div>
+                        <div class="row ml-3">
+                            <div class="col-md-5 border1">
+                                <h6 class="mt-3">FC</h6>
+                                <h2 id="fc" class="number_font">abc</h2>
+                            </div>
+                            <div class="col-md-5 border1 offset-1">
+                                <h6 class="mt-3">Transmission</h6>
+                                <h2 id="transmission" class="text_font">abc</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 pt-4">
+                                <div class="row ml-3 mb-5 mt-4">
+                                    <div class="col-md-5 border1">
+                                        <h6 class="mt-3">Kms Driven</h6>
+                                        <h2 id="kms" class="number_font">123456</h2>
+                                    </div>
+                                    <div class="col-md-5 border1 offset-1">
+                                        <h6 class="mt-3">Fuel Type</h6>
+                                        <h2 id="fuel" class="text_font">abc</h2>
+                                    </div>
+                                </div>
+                                <div class="row ml-3">
+                                    <div class="col-md-5 border1">
+                                        <h6 class="mt-3">Model Year</h6>
+                                        <h2 id="year" class="number_font">abc</h2>
+                                    </div>
+                                    <div class="col-md-5 border1 offset-1">
+                                        <h6 class="mt-3">Number of Owners</h6>
+                                        <h2 id="owners" class="number_font">abc</h2>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-6 pr-5">
+                                <div class="row ml-3 mt-5 border1">
+                                    <div class="col-12">
+                                        <textarea class="mb-3 mt-3" id="comments" cols="42" rows="1"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row ml-3 mt-5 border1">
+                                    <div class= "col-3 text-center">
+                                        <h5 class="mt-3">B-ID</h5>
+                                        <p id="b_id" class="bid_font">abc</p>
+                                    </div>
+                                    <div class= "offset-1 col text-center">
+                                        <h5 class="mt-3">Bid Price</h5>
+                                        <p id="b_price" class="price_font">abc</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

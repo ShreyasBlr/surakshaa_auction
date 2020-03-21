@@ -1,0 +1,49 @@
+.jumbotron{
+    background-color: #fff !important;
+}
+.bid_font, .price_font{
+    font-size: xx-large;
+    font-weight: 500;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.price_font{
+    color: red;
+}
+.bid_font{
+    color: royalblue;
+}
+.border1{
+    border-radius: 10px;
+    box-shadow: 0 0 3px 1px #ddd;
+}
+.border-red{
+    border-radius: 10px;
+    border: 1px solid red;
+}
+textarea{
+    border: none;
+}
+.img-thumbnail{
+    border-radius: 20px !important;
+    border: 1px solid #fff !important;
+}
+.navbar-box{
+    background-color: #ddd;
+    height: 60vh;
+}
+.soldBtn, .obBtn{
+    width: 150px;
+}
+.price_input{
+    margin-top: 40px;
+}
+.jump_to{
+    max-width: 100px;
+}
+.fix-width{
+    max-width: 230px;
+}
+form{
+    display: inline-block;
+}
